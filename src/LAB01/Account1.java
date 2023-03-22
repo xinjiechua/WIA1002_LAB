@@ -1,14 +1,13 @@
 package LAB01;
 
 import java.util.ArrayList;
-import java.util.Date;
 
 public class Account1 extends Account{
     private String name;
-    private ArrayList <Transaction> transaction = new ArrayList();
+    private ArrayList <Transaction> transaction = new ArrayList<>();
 
-public Account1(){
-        super();
+    public Account1(){
+
     }
 
     public Account1(String name, int id, double balance){
@@ -18,12 +17,12 @@ public Account1(){
 
     public void withdraw(double amount, String description){
         super.withdraw(amount);
-        transaction.add(new Transaction('W',amount, super.getBalance(), "Money is withdrawn."));
+        transaction.add(new Transaction('W',amount, super.getBalance(), description));
     }
 
     public void deposit(double amount, String description){
         super.deposit(amount);
-        transaction.add(new Transaction('D', amount ,super.getBalance(), "Money is deposited."));
+        transaction.add(new Transaction('D', amount ,super.getBalance(), description));
     }
 
     public String getName(){
@@ -51,12 +50,7 @@ public Account1(){
         System.out.println("Transactions:");
 
         for (Transaction transaction : a.getTransactions()) {
-            System.out.println("Date: " + transaction.getDate());
-            System.out.println("Type: " + transaction.getType());
-            System.out.println("Amount: " + transaction.getAmount());
-            System.out.println("Balance: " + transaction.getBalance());
-            System.out.println("Description: " + transaction.getDescription());
-            System.out.println();
+            System.out.println(transaction.toString());
         }
     }
 }

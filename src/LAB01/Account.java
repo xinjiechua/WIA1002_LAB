@@ -12,6 +12,7 @@ public class Account {
         id = 0;
         balance = 0;
         annualInterestRate = 0;
+        dateCreated = new Date();
     }
 
     public Account(int id, double balance){
@@ -69,8 +70,8 @@ public class Account {
         a.setAnnualInterestRate(0.045);
         a.withdraw(2500);
         a.deposit(3000);
-        System.out.println("Balance: " + a.getBalance());
-        System.out.println("Monthly interest: " + a.getMonthlyInterest());
+        System.out.printf("Balance: %.2f", a.getBalance());
+        System.out.printf("Monthly interest: %.2f", a.getMonthlyInterest());
         System.out.println("Date created: " + a.getDateCreated());
     }
 }

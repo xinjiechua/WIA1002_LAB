@@ -1,8 +1,8 @@
-package LAB01;
+package LAB01.Q3Q4;
 
 import java.util.ArrayList;
 
-public class Account1 extends Account{
+public class Account1 extends Account {
     private String name;
     private ArrayList <Transaction> transaction = new ArrayList<>();
 

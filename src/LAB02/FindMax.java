@@ -16,7 +16,7 @@ The max method above returns the maximum value in an array.
 
 public class FindMax {
     public static class Circle implements Comparable<Circle>{
-        double radius;
+        private double radius;
 
         public Circle(double radius){
             this.radius = radius;
@@ -26,6 +26,7 @@ public class FindMax {
         public int compareTo(Circle o) {
             return Double.compare(radius, o.radius);
         }
+        //override compareTo when using our own class
 
         public String toString(){
             return "Circle radius: " + radius;

@@ -1,4 +1,4 @@
-package LAB06.Q1;
+package LAB06_.Q1;
 
 import java.util.ArrayList;
 

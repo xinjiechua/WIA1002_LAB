@@ -1,6 +1,6 @@
-package LAB06.Q2;
+package LAB06_.Q2;
 
-import LAB06.Q1.MyStack;
+import LAB06_.Q1.MyStack;
 
 import java.util.Scanner;
 

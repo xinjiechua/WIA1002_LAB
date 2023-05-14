@@ -1,4 +1,4 @@
-package LAB06.Q4;
+package LAB06_.Q4;
 
 import java.util.Stack;
 

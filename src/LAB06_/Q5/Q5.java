@@ -1,4 +1,4 @@
-package LAB06.Q5;
+package LAB06_.Q5;
 
 import java.util.Iterator;
 import java.util.Scanner;

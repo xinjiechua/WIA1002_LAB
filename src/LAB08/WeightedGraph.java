@@ -149,6 +149,32 @@ class WeightedGraph<T extends Comparable<T>, N extends Comparable <N>> {
       return addEdge(source, destination, weight) && addEdge(destination, source, weight);
    }
 
+   /*
+    public boolean addUndirectedEdge(T source, T destination, N weight){
+        Vertex<T, N> src = head;
+        while(src != null){
+            if (src.vertexinfo.equals(source)){ // found source
+                Vertex<T,N> dest = head;
+                while(dest != null){
+                    if (dest.vertexinfo.equals(destination)){ // found dest
+                        Edge<T,N> srcNewEdge = new Edge(dest, weight, src.firstEdge);
+                        Edge<T,N> destNewEdge = new Edge(src, weight, dest.firstEdge);
+                        src.firstEdge = srcNewEdge;
+                        dest.firstEdge = destNewEdge;
+                        src.outdeg++; src.indeg++;
+                        dest.indeg++; dest.outdeg++;
+                        return true;
+                    }
+                    dest = dest.nextVertex;
+                }
+                return false; // destination not found
+            }
+            src = src.nextVertex;
+        }
+        return false;
+    }
+*/
+
    public boolean hasEdge(T source, T destination) {
       if (head==null)
          return false;

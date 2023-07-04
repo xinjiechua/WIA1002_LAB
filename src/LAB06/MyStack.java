@@ -3,7 +3,9 @@ package LAB06;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
-public class MyStack <E> {
+public class
+
+MyStack <E> {
     ArrayList<E>list = new ArrayList<>();
 
     public int getSize(){
@@ -28,7 +30,7 @@ public class MyStack <E> {
         return list.get(getSize()-1);
     }
 
-    public Boolean isEmpty(){
+    public boolean isEmpty(){
         return list.isEmpty();
     }
 

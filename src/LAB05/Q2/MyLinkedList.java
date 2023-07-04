@@ -112,10 +112,10 @@ public class MyLinkedList<E>{
     public void removeElement(E e){
         Node<E> current = head;
         for(int i=0; i<size; i++){
-            if(current.element.equals(e)){
+            if(current.element.equals(e)) {
                 remove(i);
+                break;
             }
-
         }
         current = current.next;
     }
